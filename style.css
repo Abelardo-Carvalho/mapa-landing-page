@@ -1,0 +1,27 @@
+body {
+  background-color: #020507;
+  margin: 0;
+  height: 100vh;
+}
+
+.cabecalho{
+    width: 100%;
+    height: 25%;
+}
+
+.nome{
+    color: white;
+    display: block;
+}
+
+.foto-perfil{
+    width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  background-color: rgb(70, 70, 70);
+  display: block;
+  margin-left: auto;
+  margin-right: 10%;
+  margin-top: 10%;
+}
