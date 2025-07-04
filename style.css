@@ -1,9 +1,10 @@
 *{
   font-family: "Segoe UI", "Helvetica Neue", "Arial", sans-serif;
+  scroll-behavior: smooth;
 }
 
 body {
-  background-color: #020507;
+  background-color: #000000;
   margin: 0;
   height: 100vh;
 }
@@ -22,6 +23,7 @@ body {
 .nome{
     color: white;
     display: inline-block;
+    font-size: 40pt;
 }
 
 .foto-perfil{
@@ -34,11 +36,41 @@ body {
 }
 
 .menu{
-  display: flex;
-  justify-content: center;
-  margin-top: 10%;
+   margin-top: 20%;
+   margin-bottom: 20%;
 }
-nav{
-  display: flex;
-  gap: 20px;
+nav {
+  text-align: center;
+  margin-top: 50px;
+}
+
+nav a{
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  padding: 0px 50px 0;
+  font-size: 20pt;
+  position: relative;
+  font-weight: 100;
+}
+
+nav a::after{
+  content: " ";
+  width: 0%;
+  height: 4px;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: 0.5s ease-in-out;
+}
+
+nav a:hover::after{
+  width: 100%;
+}
+
+
+
+main h2{
+  color: rgb(255, 255, 255);
+  font-size: 20pt;
 }
